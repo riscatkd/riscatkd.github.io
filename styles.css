@@ -1,0 +1,180 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 152px;
+}
+
+/* Utility styles */
+
+.anchor {
+  left: -9999px;
+  position: absolute;
+  top: -152px;
+}
+
+.block {
+  flex: 1 0 50%;
+  margin: 20px 0;
+  min-width: 300px;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--v-center {
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  position: relative;
+}
+
+.section:first-child > .anchor {
+  top: -172px;
+}
+
+/* Element styles */
+
+a {
+  color: #009FE3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active, a:focus, a:visited {
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+h4 {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* BEM component styles */
+
+.affiliation-logo {
+  height: 40px;
+  margin: 0 10px;
+}
+
+.instructor {}
+
+.instructor--assistant {
+  margin-bottom: 10px;
+}
+
+.instructor__grade {
+  color: #999999;
+}
+
+.instructor__photo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.instructor__photo--assistant {
+  height: 35px;
+}
+
+.logo {
+  height: 100px;
+  margin: 10px 0;
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
+.main-footer {
+  border-top: 1px solid #D7D7D7;
+  padding: 10px;
+  width: 100%;
+}
+
+.main-header {
+  background-color: #FFFFFF;
+  height: 152px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.main-nav {
+  border: solid #D7D7D7;
+  border-width: 1px 0;
+  width: 100%;
+}
+
+.main-nav__item {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 5px 10px;
+}
+
+.main-nav__link {
+  color: inherit;
+}
+
+.training-times {}
+
+.training-times__directions {
+  background: url("icons/directions.svg")
+              2.5px top/18px
+              no-repeat;
+  font-weight: normal;
+  padding-left: 25px;
+  white-space: nowrap;
+}
+
+.training-times__time {
+  font-size: 12px;
+}
+
+.training-times__times {
+  margin-top: 10px;
+}
