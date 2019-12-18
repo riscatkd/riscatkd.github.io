@@ -97,7 +97,7 @@ module.exports = (_env, { mode }) => {
     output: {
       filename: 'riscatkd.js',
       path: path.resolve(__dirname, './'),
-      publicPath: '/'
+      publicPath: './'
     },
     plugins: [
       new HtmlWebpackPlugin({
