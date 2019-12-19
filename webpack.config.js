@@ -68,7 +68,8 @@ module.exports = (_env, { mode }) => {
         use: [{
           loader: 'url-loader',
           options: {
-            limit: 5000000,
+            // limit: 5000000,
+            limit: 40960,
             name: 'images/[name].[ext]'
           }
         }]
