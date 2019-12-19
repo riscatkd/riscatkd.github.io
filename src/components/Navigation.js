@@ -66,23 +66,7 @@ const styles = {
     margin: 5px ${MENU_ITEM_PADDING_HORIZONTAL}px;
     position: relative;
     text-transform: uppercase;
-
-    &::after {
-      border-bottom: 2px solid transparent;
-      bottom: 0;
-      content: '';
-      left: 50%;
-      position: absolute;
-      transform: translateX(-50%);
-      transition: border-bottom-color 0.1s linear;
-      width: 40px;
-    }
-
-    &:hover {
-      &::after {
-        border-bottom-color: ${colors.textLighter};
-      }
-    }
+    user-select: none;
   `,
   marker: css`
     bottom: 0;
@@ -90,7 +74,14 @@ const styles = {
     position: absolute;
 
     &::after {
-      border-bottom-color: ${colors.selected};
+      border-bottom: 2px solid ${colors.selected};
+      bottom: 0;
+      content: '';
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      transition: border-bottom-color 0.1s linear;
+      width: 40px;
     }
   `,
   markerAnimated: css`
