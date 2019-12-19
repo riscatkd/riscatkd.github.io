@@ -10,8 +10,9 @@ const Block = ({ children }) => (
 
 const styles = {
   block: css`
+    flex: 1 1 auto;
     margin-bottom: 20px;
-    min-width: ${(layout.maxWidth - (layout.padding * 2)) / 2}px;
+    /* min-width: ${(layout.maxWidth - (layout.padding * 2)) / 2}px; */
   `
 };
 
